@@ -1,0 +1,24 @@
+seed: 42
+data_path: data/synthetic_fb_ads_undergarments.csv
+sample_data_path: data/sample_synthetic_fb_ads_undergarments.csv
+use_sample_default: true
+sample_rows: 500
+
+# thresholds
+ctr_low_quantile: 0.25
+roas_drop_pct: 0.15
+ctr_drop_pct: 0.10
+recent_window_days: 14
+previous_window_days: 30
+min_impressions_for_confidence: 1000
+confidence_persist_threshold: 0.5
+
+# outputs
+reports_path: reports
+logs_path: logs/run_logs.json
+memory_path: memory/short_term_memory.json
+
+# optional LLM integration (not enabled by default)
+use_llm: false
+openai_api_key: null
+llm_model: "gpt-4o"
